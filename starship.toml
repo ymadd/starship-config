@@ -1,1 +1,139 @@
-/home/yamato/.config/starship.toml
+# Don't print a new line at the start of the prompt
+add_newline = true
+
+# Replace the "❯" symbol in the prompt with "➜"
+[character]      # The name of the module we are configuring is "character"
+symbol = "➜"
+error_symbol = "✗"
+style_success = "bold green"
+style_failure = "bold red"
+use_symbol_for_status = true
+
+[cmd_duration]
+min_time = 500
+prefix = "underwent "
+
+[package]
+symbol = " "
+
+[directory]
+prefix = "in "
+style = "bold cyan"
+
+[battery]
+full_symbol = ""
+charging_symbol = ""
+discharging_symbol = ""
+#you now disable battery if you want show please change true
+disabled = true
+
+[[battery.display]]
+threshold = 10
+style = "bold red"
+
+[[battery.display]]
+threshold = 40
+style = "bold yellow"
+
+[[battery.display]]
+threshold = 100
+style = "bold green"
+
+[env_var]
+variable = "SHELL"
+default = "unknown shell"
+
+[hostname]
+ssh_only = false
+prefix = "⟪"
+suffix = "⟫"
+disabled = false
+
+#VM
+[docker_context]
+symbol = " "
+
+#git
+[git_branch]
+symbol = " "
+style = "bold 93"
+truncation_symbol = "…"
+
+[git_commit]
+truncation_length = 4
+
+[git_state]
+progress_divider = " of "
+rebase = "-REBASING"
+merge = "-MERGING"
+revert = "﫧-REVERTING"
+cherry_pick = "-PICKING"
+bisect = "臭-BISECTING"
+am = "ﯬ-AM"
+am_or_rebase = "ﯬ/"
+
+[git_status]
+prefix = ""
+suffix = " "
+conflicted.value = " "
+conflicted.style = "bold yellow"
+conflicted_count.enabled = true
+conflicted_count.style = "bold red"
+ahead.value = "🏎 "
+ahead.style = "bold 12"
+behind.value = "ﲧ ﲪ "
+behind.style = "bold red"
+diverged = " "
+untracked.value = " "
+untracked.style = "bold yellow"
+untracked_count.enabled = true
+untracked_count.style = "bold red"
+stashed.value = "﬒ "
+stashed.style = "bold cyan"
+stashed_count.enabled = true
+stashed_count.style = "yellow"
+modified.value = " "
+modified.style = "bold red"
+modified_count.enabled = true
+modified_count.style = "bold red"
+staged.value = " "
+staged.style = "bold green"
+staged_count.enabled = true
+staged_count.style = "green"
+renamed.value = " "
+renamed.style = "bold yellow"
+renamed_count.enabled = true
+renamed_count.style = "yellow"
+deleted.value = "🗑 "
+deleted.style = "bold red"
+deleted_count.enabled = true
+#deleted_count.style = ""
+show_sync_count = true
+
+#Code prompt
+[rust]
+symbol = " "
+
+[julia]
+symbol = "ஃ "
+
+[elixir]
+symbol = " "
+
+[python]
+symbol = " "
+pyenv_version_name = true
+pyenv_prefix = "pyenv "
+
+[golang]
+symbol = "ﳑ "
+
+[haskell]
+symbol = " "
+
+[nix_shell]
+disabled = true
+use_name = true
+impure_msg = "impure shell"
+pure_msg = "pure shell"
+symbol = "☃️  "
