@@ -77,12 +77,9 @@ tag_symbol = "🔖 "
 
 [git_state]
 rebase = "-REBASING"
-merge = "[-MERGING](bold 93)"
+merge = "[-MERGING](bold 93)"
 revert = "﫧-REVERTING"
 cherry_pick = "[🍒-PICKING](bold red)"
-bisect = "臭-BISECTING"
-am = "ﯬ-AM"
-am_or_rebase = "ﯬ/"
 
 [git_status]
 format = '([\[$all_status$ahead_behind\]]($style) )'
