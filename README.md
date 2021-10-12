@@ -1,1 +1,1 @@
-Use FiraCode nerd font
+Use Meslo LG Nerd Font in your terminal.
